@@ -82,7 +82,7 @@ function retriveWeather(latitude, longitude) {
 
         cityName.innerHTML = data.city.name;
         temp.innerHTML = kelvinToCelsius(data.list[0].main.temp) + "°c";
-        icon.src = `images/${data.list[0].weather[0].main}.png`;
+        icon.src = `images/${data.list[0].weather[0].main.toLowerCase()}.png`;
         humidity.innerHTML = data.list[0].main.humidity + "%";
         wind.innerHTML = data.list[0].wind.speed + "km/h";
 
