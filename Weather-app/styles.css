@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition-duration: 100ms;
+}
+
+body {
+    background: #2f2f2f;
+    margin-bottom: 40px;
+}
+
+.title {
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 25px auto 0;
+    padding: 40px 35px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.hours{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+}
+
+.temp{
+    font-size: 0.8rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.hour-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-hour {
+    width: 22px;
+    margin-top: 10px;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 10rem;
+    width: 30%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 25px auto 0;
+    padding-top: 5%;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 3.4rem;
+    width: 5rem;
+    border-radius: 3rem;
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.search  button {
+    border: 0;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3.4rem;
+    height: 3.4rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.search button img {
+    width: 21px;
+    height: 21px;
+}
+
+.weather-icon {
+    width: 180px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 55px;
+    font-weight: 350;
+}
+
+.weather h2{
+    font-size: 35px;
+    font-weight: 225;
+    margin-top: -10px;
+}
+
+.weather-icon2 {
+    width: 2.3rem;
+    margin-top: 10px;
+}
+
+.weather2 h1{
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.weather2 h2{
+    font-size: 10px;
+    font-weight: 225;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.col {
+    display: flex; 
+    align-items: center;
+    text-align: left;
+    
+}
+
+ .col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 1.1rem;
+    margin-top: -6px;
+}  
+
+footer {
+    display: grid;
+    place-items: center;
+    margin-bottom: 16px;
+    margin-top: 35px;
+}
+
+footer a {
+    color: inherit;
+    height: 12px;
+}
+
+footer i {
+    cursor: pointer;
+    font-size: 28px;
+    color: #00feba;
+}
+
+footer i:hover {
+    color: #5b548a;
+}
+
+.weather {
+    display: block;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 80%;
+        padding: 30px;
+    }
+    .search{
+        width: 100%;
+    }
+    .weather h1 {
+        font-size: 45px;
+    }
+    .weather h2 {
+        font-size: 25px;
+    }
+    .weather-icon {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .col {
+        margin: 12px 0;
+        padding-right: 10px;
+        justify-content: space-between;
+    }
+    .details {
+        align-items: center;
+        padding-right: -40px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .card {
+        max-width: 90%;
+    }
+    .icon {
+        transform: scale(0.9);
+        transform-origin: top right;
+    }
+    .icon-btn {
+        transform: scale(0.9);
+        transform-origin: top right;
+        margin-top: 10px;
+    }
+}
